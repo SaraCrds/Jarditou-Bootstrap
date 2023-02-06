@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarditou</title>
+</head>
+<body>
+    <div class="container-fluid card border-0 px-0 pt-0 pb-0 justify-content-center bg-body-secondary">
+    <div class="bg-white col-md-6 mx-auto border-0">
+        <!-- LOGO -->
+        <header>
+            <div class="row no-gutters align-items-center justify-content-center">
+                    <div class="col-md-4 col-sm-12">
+                        <img src="assets/img/nouveaulogo.png" class="img-fluid" alt="logo" title="logo">
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <h1 class="m-0 text-success display-3">Jarditou</h1>
+                        <p class="m-0">La qualité depuis toujours</p>
+                    </div>
+            </div>
+        </header>
+        <!-- NAV BAR -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary text-center px-2">
+                <a class="navbar-brand" href="index.html">Jarditou.com</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="tableau.html">Tableau</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Votre Recherche" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+              </nav>
+            <!-- PROMOTION -->
+        <section>
+            <img src="assets/img/promotion.png" class="img-fluid" alt="promotion" title="promotion">
+    </section>
+    <!-- ARTICLE -->
+        <section>
+            <article class="p-2">
+                <h2><span class="text-success">C</span>ontact</h2>
+            <hr>
+            <p>* Ces zones sont obligatoires</p>
+            <form action="#" method="POST" id="formulaire_contact">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <!-- NOM -->
+                <div class="input-group mb-2">
+                    <span class="input-group-text">Nom: *</span>
+                    <input class="form-control form-control-sm" type="text" name="nom" id="nom" maxlength="25">
+                 </div>
+                    <span class="defform" id="defnom"></span>
+
+                <!-- PRENOM -->
+                <div class="input-group mb-2">
+                    <span class="input-group-text">Prénom: *</span>
+                    <input class="form-control form-control-sm" type="text" name="prenom" id="prenom" maxlength="40">
+                 </div>
+                    <span class="defform" id="defprenom"></span>
+                
+                <!-- DATE DE NAISSANCE -->
+                <div class="input-group mb-2">
+                    <span class="input-group-text">Date de Naissance: *</span>
+                    <input class="form-control form-control-sm" type="date" name="date" id="date" value="">
+                 </div>
+                    <span class="defform" id="defdate"></span>
+
+                <!-- CODE POSTAL -->
+                <div class="input-group mb-2">
+                    <span class="input-group-text">Code Postal: *</span>
+                    <input class="form-control form-control-sm" type="text" name="codepostal" id="codepostal" maxlength="10">
+                 </div>
+                    <span class="defform" id="defcp"></span>
+                
+                <!-- ADRESSE -->
+                <div class="input-group mb-2">
+                    <span class="input-group-text">Adresse: </span>
+                    <input class="form-control form-control-sm" type="text" name="adresse" id="adresse">
+                 </div>
+
+                <!-- VILLE -->
+                <div class="input-group mb-2">
+                    <span class="input-group-text">Ville: </span>
+                    <input class="form-control form-control-sm" type="text" name="ville" id="ville">
+                 </div>
+
+                <!-- EMAIL -->
+                <div class="input-group mb-2">
+                    <span class="input-group-text">Email: *</span>
+                    <input class="form-control form-control-sm" type="text" name="email" id="email" placeholder="dave.loper@afpa.fr">
+                 </div>
+                    <span class="defform" id="defemail"></span>
+
+                <!-- GENRE -->
+                <div class="input-group mb-2 align-items-center">
+                <span class="input-group-text">Genre: *</span>
+                <div class="form-check form-check-inline mx-3">
+                    <input class="form-check-input" type="radio" name="feminin" id="feminin" value="feminin">
+                    <label class="form-check-label" for="feminin">Féminin</label>
+                </div>
+                <div class="form-check form-check-inline mx-3">
+                    <input class="form-check-input" type="radio" name="masculin" id="masculin" value="masculin">
+                    <label class="form-check-label" for="masculin">Masculin</label>
+                </div>
+                </div>
+                <span class="defform" id="defsexe"></span>  
+            </fieldset>
+            <fieldset>
+                <legend>Votre demande</legend>
+                <!-- SUJET -->
+                <div class="input-group mb-2">
+                    <span class="input-group-text">Sujet: *</span>
+                    <select class="form-select" id="sujet">
+                        <option value="" selected>Veuillez séléctionner un sujet</option>
+                        <option value="produit">Question sur un produit</option>
+                        <option value="reclamation">Réclamation</option>
+                        <option value="autres">Autres</option>
+                      </select>                    
+                 </div>
+                    <span class="defform" id="defsujet"></span>
+
+                <!-- QUESTION -->
+                <div class="input-group">
+                    <span class="input-group-text">Votre question: *</span>
+                    <textarea class="form-control" name="question" id="question" placeholder="minimum 50 caractères s'il vous plaît"></textarea><br>
+                </div>
+                 <span class="defform" id="defquestion"></span>
+
+                <!-- TRAITEMENT DONNEES -->
+                <div class="form-check my-2">
+                    <input class="form-check-input" type="checkbox" value="accepter" id="traitement" name="traitement">
+                    <label class="form-check-label" for="traitement">
+                        * J'accepte le traitement informatique de ce formulaire.
+                    </label>
+                  </div>
+                <span class="defform" id="deftraitement"></span>
+                
+                <button class="btn btn btn-outline-success" type="submit" value="Envoyer">Envoyer</button>
+                <button class="btn btn btn-outline-danger" type="reset" value="Annuler">Annuler</button>
+            </fieldset>
+        </form>
+        </article>
+        </section>
+    <!-- FOOTER -->
+    <footer class="navbar navbar-expand-lg bg-dark text-white justify-content-center px-3" data-bs-theme="dark">
+        <div class="d-grid gap-2">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <div class="row no-gutters pt-2">
+                    <div class="col-md-5 col-sm-12">
+                        <ul class="list-unstyled">
+                            <li>L'entreprise</li>
+                            <li><a class="text-decoration-none text-muted"  href="conditionvente">Conditions générales de vente</a></li>
+                            <li><a class="text-decoration-none text-muted" href="offres">Conditions des offres sur le site</a></li>
+                            <li><a class="text-decoration-none text-muted" href="mentionlegales">Mention légales</a></li>
+                            <li><a class="text-decoration-none text-muted" href="confidentialite">Charte de confidentialité et cookies</a></li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <ul class="list-unstyled">
+                            <li>Partenariat</li>
+                            <li><a class="text-decoration-none text-muted" href="regiepub">Régie publicitaire</a></li>
+                            <li><a class="text-decoration-none text-muted" href="devenirpartenaire">Devenir partenaire ou affilié</a></li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <ul class="list-unstyled">
+                            <li>Vous informer</li>
+                            <li><a class="text-decoration-none text-muted" href="aide">Aide</a></li>
+                            <li><a class="text-decoration-none text-muted" href="plansite">Plan du site</a></li>
+                            <li><a class="text-decoration-none text-muted" href="horraire">Horraire</a></li>
+                            <li><a class="text-decoration-none text-muted" href="commandes">Mes commandes</a></li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+                </li>
+            </ul>
+          </div>
+    </footer>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
